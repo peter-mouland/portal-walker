@@ -1,0 +1,17 @@
+{
+    "name": "the-maze-cube",
+    "homepage": "{{ git.HTTPS-URL }}",
+    "authors": [
+        "{{ git.author }} <{{ git.email }}>"
+    ],
+    "description": "The Maze Cube",
+    "main": "dist",
+    "license": "BSD3",
+    "ignore": [
+        "**/*",
+        "!src/**/*"
+    ],
+    "devDependencies": {
+        "bskyb-core": "~0.0.4"
+    }
+}
