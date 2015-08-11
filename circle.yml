@@ -3,7 +3,7 @@ test:
     - bower i
   post:
     - git config --global user.name "circleci"
-    - git config --global user.email "{{ git.email }}"
+    - git config --global user.email "peter.mouland@gmail.com"
 general:
   artifacts:
     - test/coverage

@@ -1,8 +1,8 @@
 {
     "name": "the-maze-cube",
-    "homepage": "{{ git.HTTPS-URL }}",
+    "homepage": "https://github.com/peter-mouland/the-maze-cube.git",
     "authors": [
-        "{{ git.author }} <{{ git.email }}>"
+        "Peter Mouland <peter.mouland@gmail.com>"
     ],
     "description": "The Maze Cube",
     "main": "dist",

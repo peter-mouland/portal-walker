@@ -5,7 +5,7 @@
     "main": "src/scripts/the-maze-cube.js",
     "repository": {
         "type": "git",
-        "url": "{{ git.SSH-URL }}"
+        "url": "git@github.com:peter-mouland/the-maze-cube.git"
     },
     "scripts": {
       "postinstall": "bower install",
@@ -32,5 +32,5 @@
       "karma-phantomjs-launcher": "^0.2.0",
       "jshint": "^2.6.3"
     },
-    "author": "{{ git.author }}"
+    "author": "Peter Mouland"
 }
