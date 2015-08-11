@@ -10,11 +10,8 @@
     <title>The Maze Cube</title>
     <meta name={{ pkg.name }}:version content={{ pkg.version }}>
 
-    <link rel="stylesheet" href="styles/demo.css"/>
     <link rel="stylesheet" href="styles/the-maze-cube.css"/>
-    <script type="text/javascript" src="scripts/vendor.js"></script>
-    <script type="text/javascript" src="scripts/demo.js"></script>
-    <script type="text/javascript" src="scripts/the-maze-cube.js"></script>
+    <!--<script type="text/javascript" src="scripts/the-maze-cube.js"></script>-->
 </head>
 <body>
 
@@ -26,13 +23,9 @@
                 <span class="speak">Github Repo</span>
             </a></small>
     </h1>
-
-    <p>
-        Demo project here!
-    </p>
 </div>
 
 
 <div class="demo-container">
-    {{> _includes/**/*.html }}
+    {{> mazes/**/*.html }}
 </div>

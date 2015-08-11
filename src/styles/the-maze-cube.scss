@@ -1,6 +1,15 @@
-//Import any bower dependencies as so:
-//@import 'bower_components/core/src/styles/modules/colours';
-
-body{
-  content: 'example css';
+body {
+  background: linear-gradient(#ced5d3, #ced5d3 144px, #efe8dd 144px, #efe8dd 100%);
+  overflow: hidden;
+  font-family: Helvetica, Arial, Sans-serif;
+  letter-spacing: 2px;
 }
+
+@import "reset";
+@import "stage";
+@import "portal";
+@import "people";
+@import "door";
+
+@import "onLoad";
+
