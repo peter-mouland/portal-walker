@@ -85,7 +85,7 @@
   animation-delay: 6s; }
 .stage .pit-left {
   width: 447px;
-  height: 800px;
+  height: 313px;
   top: -1400px;
   background-color: #4d4233;
   transform: translate3D(254px, 125px, 285px);
@@ -93,15 +93,15 @@
   animation-delay: 2.5s; }
 .stage .pit-right {
   width: 451px;
-  height: 800px;
+  height: 313px;
   top: -1400px;
   background-color: #847660;
   transform: translate3D(254px, 125px, 173px);
   animation: show-pit 1s forwards;
   animation-delay: 2.4s; }
 .stage .pit-back {
-  width: 170px;
-  height: 220px;
+  width: 112px;
+  height: 313px;
   background-color: #6b522b;
-  transform: rotateY(90deg) translate3D(-200px, 87px, 168px);
+  transform: rotateY(90deg) translate3D(-229px, 124px, 198px);
   animation: show-background 1.6s forwards; }
