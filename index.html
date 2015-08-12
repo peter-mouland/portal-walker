@@ -11,7 +11,6 @@
     <meta name=the-maze-cube:version content=0.0.0>
 
     <link rel="stylesheet" href="styles/the-maze-cube.css"/>
-    <!--<script type="text/javascript" src="scripts/the-maze-cube.js"></script>-->
 </head>
 <body>
 
@@ -25,8 +24,17 @@
     </h1>
 </div>
 
-
 <div class="demo-container">
+<div id="controls">
+    <strong>Rotate:</strong>
+    <span data-controls="up">up</span>
+    <span data-controls="right" >right</span>
+    <span data-controls="down" >down</span>
+    <span data-controls="left" >left</span>
+    <strong>Zoom:</strong>
+    <span data-controls="in" >in</span>
+    <span data-controls="out" >out</span>
+</div>
 <article class="container">
     <section class="stage">
 
@@ -72,3 +80,5 @@
     </section>
 
 </article></div>
+
+<script type="text/javascript" src="scripts/the-maze-cube.js"></script>
