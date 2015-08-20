@@ -1,7 +1,14 @@
+$portalWidth: 48px;
+$portalHeight: 72px;
+$wallHeight: 120px;
+$portalYOffset: ($wallHeight - $portalHeight)/2;
+$portalZOffset: 385px;
+$redPortalXOffset: -$portalWidth/2;
+$bluePortalXOffset: 286px;
 
 .stage .portal {
-  width: 48px;
-  height: 72px;
+  width: $portalWidth;
+  height: $portalHeight;
   opacity: 0;
   background-color: black;
   border-radius: 44px/62px;
@@ -14,16 +21,51 @@
   border: 4px solid white;
   border-radius: 44px/62px;
   margin-top: -4px;
-  margin-left: -4px; }
+  margin-left: -4px;
+}
 .stage .portal.red {
   background: radial-gradient(#000000, #000000 50%, #ff4640 70%);
   border: 7px solid #ff4640;
-  transform: translate3D(223px, 25px, 385px) rotateY(90deg) skewX(5deg);
+  transform: translate3D($redPortalXOffset, $portalYOffset, $portalZOffset) rotateY(90deg) skewX(5deg);
   animation: show-red-portal 1s forwards;
-  animation-delay: 5s; }
+  animation-delay: 5s;
+}
 .stage .portal.blue {
   background: radial-gradient(#000000, #000000 50%, #258aff 70%);
   border: 7px solid #258aff;
-  transform: translate3D(586px, 25px, 4px) skewX(-5deg);
+  transform: translate3D($bluePortalXOffset, $portalYOffset, 4px) skewX(-5deg);
   animation: show-blue-portal 1s forwards;
-  animation-delay: 6s; }
+  animation-delay: 6s;
+}
+
+
+@keyframes show-red-portal {
+  0% {
+    transform: translate3D($redPortalXOffset, $portalYOffset, $portalZOffset) rotateY(90deg) skewX(5deg) scale(0);
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3D($redPortalXOffset, $portalYOffset, $portalZOffset) rotateY(90deg) skewX(5deg) scale(1);
+    opacity: 1;
+  }
+}
+
+
+@keyframes show-blue-portal {
+  0% {
+    transform: translate3D($bluePortalXOffset, $portalYOffset, 4px) skewX(-5deg) scale(0);
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3D($bluePortalXOffset, $portalYOffset, 4px) skewX(-5deg) scale(1);
+    opacity: 1;
+  }
+}

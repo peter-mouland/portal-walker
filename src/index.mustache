@@ -7,17 +7,16 @@
 <!--end css conditionals-->
 <head lang="en">
     <meta charset="UTF-8"/>
-    <title>The Maze Cube</title>
+    <title>Portal Walker</title>
     <meta name={{ pkg.name }}:version content={{ pkg.version }}>
-
-    <link rel="stylesheet" href="styles/the-maze-cube.css"/>
+    <link rel="stylesheet" href="styles/portal-walker.css"/>
 </head>
 <body>
 
 <div class="demo-container">
-    <h1>The Maze Cube
+    <h1>Portal Walker
         <small  class="demo-version text--secondary">v{{ pkg.version }}
-            <a href="{{ git.HTTPS-URL }}" class="text--secondary">
+            <a href="https://github.com/peter-mouland/portal-walker" class="text--secondary">
                 <span class="demo-icon demo-icon--github"  aria-hidden=true></span>
                 <span class="speak">Github Repo</span>
             </a></small>
@@ -25,7 +24,7 @@
 </div>
 
 <div class="demo-container">
-    {{> mazes/**/*.html }}
+    {{> rooms/**/*.html }}
 </div>
 
-<script type="text/javascript" src="scripts/the-maze-cube.js"></script>
+<script type="text/javascript" src="scripts/portal-walker.js"></script>
