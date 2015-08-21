@@ -47,10 +47,12 @@ $dudeTwoStartZ: 0;
   background-color: black;
   top: 30px;
 }
-.stage .dude figure.body:before, .stage .dude-shadow figure.body:before {
+.stage .dude figure.body:before,
+.stage .dude-shadow figure.body:before {
   left: 3px;
 }
-.stage .dude figure.body:after, .stage .dude-shadow figure.body:after {
+.stage .dude figure.body:after,
+.stage .dude-shadow figure.body:after {
   left: 14px;
 }
 .stage .dude.one {
