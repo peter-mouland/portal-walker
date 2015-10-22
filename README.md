@@ -1,4 +1,4 @@
-[The Maze Cube](http://peter-mouland.github.io/portal-walker)  
+[portal-walker](http://peter-mouland.github.io/portal-walker)  
 ========================
 
 > Please take a look at the [demo page](http://peter-mouland.github.io/portal-walker)
